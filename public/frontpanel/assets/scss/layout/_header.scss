@@ -1,0 +1,48 @@
+.nav-header {
+    .container {
+        .navbar-wrapper {
+            background: #141C27;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .logo{
+                   h1{
+                    background: #55e6a5;
+                    padding: 0.4rem 1rem;
+                    color: black;
+                    margin-right: 1rem;
+                   
+                   }
+                }
+                .my-name{
+                    font-weight: 700;
+                }
+            }
+            .menu-wrapper {
+                .menu-items {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 2rem;
+                    .mainmenu_link{
+                        a{
+                            color:$white-color;
+                        }
+                    }
+                }
+            }
+            .home-icon-wrapper {
+                .fa-bars {
+                    background: #55e6a5;
+                    padding: 1.01rem;
+                    font-size: 1.5rem;
+                    color: black;
+                }
+            }
+        }
+    }
+}

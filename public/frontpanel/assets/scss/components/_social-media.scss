@@ -1,0 +1,30 @@
+.social_media {
+    display: flex;
+
+    li {
+        margin-right: 1rem;
+
+    .media_icons{
+        background: $primary-color;
+        border-radius: 50%;
+        padding: 8.25px 12px;
+
+        svg{
+            color: $white-color;
+        }
+    }
+    }
+}
+
+.wdth_icon {
+    width: 2rem;
+    display: block;
+    height: 2rem;
+    border-radius: 50%;
+    background: $primary-color;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

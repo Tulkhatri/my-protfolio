@@ -1,0 +1,60 @@
+// Inter Font Family 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+// Pollor One Static Font Family 
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+@font-face {
+    font-family: arial;
+    src: url("../fonts/arial/arial.TTF") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: arial; 
+    src: url("../fonts/arial/arial-bold.TTF") format("truetype");
+    font-weight: bold;
+}
+
+//===== Colors =====//
+ 
+$body-color: #505050;
+$gray-color: #656565;
+$gray_text: #B5B5B5;
+$gray_background: #f2f2f2;
+$primary-color: #E11F25;
+$light-primary-color: #FFE4E5;
+$dark-primary-color: #004936;
+$primary-color-2: #d9ece7;
+$heading-color: #004936;
+$heading-sm-color: #008060;
+$border-primary: #E11F25;
+$border-color:#ddd;
+$white-color: #fff;
+$black-color: #000;
+$opacity-color: #008060c7;
+$blue-color: #05204A;
+$blue-color-light: #87CEEB;
+$opacity_05: rgba(0, 128, 96, 0.05);
+$section_color: #FFD8D9;
+
+//==== Social Media Color =====//
+
+$facebook: #1561b7;  
+$google-plus: #c2080f;
+$pinterest: #c2080f;
+$linkedin: #127bbb;
+$twitter: #4696f0;
+
+//===== Font Family =====//
+
+$body-font: "arial";
+$inter-font: "Inter", sans-serif;
+$apra-font: 'apra';
+$polar-font: "Poller One", serif;
+
+//==== Transition =====//
+
+$transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+$left-right-gradient: linear-gradient(to right, $primary-color 5%, $primary-color-2 100%);
+$box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$drop-shadow: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));

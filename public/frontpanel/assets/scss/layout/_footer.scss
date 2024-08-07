@@ -1,0 +1,39 @@
+.footer {
+    border-top: 0.1rem solid #0f1d36;
+    background: #10161f;
+    .contact-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        .icon-detail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            .icon {
+                background: #55e6a5;
+                padding: 0.5rem 1.2rem;
+                border-radius: 50%;
+                font-size: 2.5rem;
+                color: #10161f;
+            }
+            .address{
+                padding: 0.5rem 1.4rem !important;
+            }
+            .detail {
+                p {
+                    color: #d4cece !important;
+                }
+            }
+        }
+    }
+    .copy-right-wrapper {
+        text-align: center;
+        padding: 2rem;
+        margin-top: 2rem;
+        border-top: 0.1rem solid #112343;
+        // background: #02050a;
+        color: #aba5a5 !important;
+    }
+}

@@ -1,0 +1,38 @@
+.offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #141c27 !important;
+    color: #ffff !important;
+
+    .btn-close-wrapper {
+        border-radius: 50% !important;
+        padding: 0.3rem 0.7rem !important;
+        background: #55e6a5 !important;
+        .fa-xmark {
+            color: black !important;
+            text-align: center !important;
+            font-size: 1rem !important;
+        }
+    }
+    .btn-close-wrapper:hover {
+        background: #09101a !important;
+        .fa-xmark {
+            color: #ffff !important;
+        }
+    }
+}
+.offcanvas-body {
+    background: #09101a !important;
+    color: #ffff !important;
+    .border-light-green{
+        border: 0.1rem solid #55e6a5 !important;
+    }
+    textarea{
+        padding: 0.5rem 1rem;
+    }
+    button{
+        background:  #55e6a5;
+        padding: 0.8rem 1.5rem;
+    }
+}
