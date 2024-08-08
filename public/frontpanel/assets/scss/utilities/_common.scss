@@ -9,6 +9,33 @@ body {
     background: #55e6a5;
     padding: 0.8rem 1.5rem;
 }
-a{
-    
+.text-center {
+    text-align: center;
+}
+.primary-color {
+    color: #55e6a5 !important;
+}
+p{
+    font-size: 1.2rem;
+    color: #ccc4c4;
+}
+
+.is-visible {
+    display: inline-block;
+    animation: cd-rotate-1-in 1.2s forwards;
+}
+
+.is-hidden {
+    display: none;
+}
+
+@keyframes cd-rotate-1-in {
+    0% {
+        opacity: 0;
+        transform: rotateX(-180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+    }
 }
