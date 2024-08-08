@@ -2,7 +2,7 @@
     <div class="container">
         <div class="contact-wrapper">
 
-            <div class="icon-detail">
+            <div class="icon-detail fade-right">
                 <div class="icon address">
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
@@ -13,7 +13,7 @@
                 </div>
             </div>
 
-            <div class="icon-detail">
+            <div class="icon-detail fade-right">
                 <div class="icon">
                     <i class="fa-solid fa-phone-volume"></i>
                 </div>
@@ -24,7 +24,7 @@
                 </div>
             </div>
 
-            <div class="icon-detail">
+            <div class="icon-detail fade-right">
                 <div class="icon">
                     <i class="fa-solid fa-envelope-open-text"></i>
                 </div>
