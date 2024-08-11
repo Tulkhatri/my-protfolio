@@ -1,14 +1,39 @@
+/* width */
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #404040; 
+    border-radius:0.5rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #303030; 
+  }
+
 body {
     background: #09101a;
-    color: #ffffff;
+    color: #FFFF;
+    height: 200%;
 }
 .color-light-green {
     color: #55e6a5 !important;
 }
-.btn-primary {
-    background: #55e6a5;
-    padding: 0.8rem 1.5rem;
+.none{
+    display: none;
 }
+.block{
+    display: inline-block;
+}
+
 .text-center {
     text-align: center;
 }
@@ -19,7 +44,12 @@ p{
     font-size: 1.2rem;
     color: #ccc4c4;
 }
-
+.pointer{
+    cursor: pointer;
+}
+.error{
+    color: rgb(171, 3, 3);
+}
 .is-visible {
     display: inline-block;
     animation: cd-rotate-1-in 1.2s forwards;

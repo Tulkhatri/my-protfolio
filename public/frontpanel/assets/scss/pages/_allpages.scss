@@ -21,6 +21,8 @@
         color: #55e6a5;
     }
 }
+
+//service section-start
 .my-service {
     background: #02050a;
     padding: 2rem 0;
@@ -28,25 +30,23 @@
         display: flex;
         gap: 1rem;
 
-        @include max(769px){
+        @include max(769px) {
             flex-direction: column;
         }
-        
+
         .service {
             position: relative;
-            border: 3px solid #191919;
+            border: 3px solid #002b16;
             flex-basis: 33.33%;
             padding: 1.5rem;
             margin-top: 5rem;
             width: 100%;
-
-            .title{
+            .title {
                 text-align: center;
-                margin-top:2rem;
+                margin-top: 2rem;
             }
-            .details{
-                margin-top:1rem;
-               
+            .details {
+                margin-top: 1rem;
             }
             .icon-wrapper {
                 width: 100%;
@@ -57,5 +57,33 @@
         }
     }
 }
+// service section-end
+
+//about me section-start
+.about-me {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    @include max(679px) {
+        flex-direction: column-reverse;
+    }
+    .left-section {
+        flex-basis: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .image-section {
+        flex-basis: 30%;
+        border-top: 1rem solid #55e6a5;
+        border-right: 1rem solid #55e6a5;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+}
+//about me section-end
 
 //homepage-end
