@@ -21,18 +21,26 @@
             <div class="head-section">
                 <div class="my-short-bio fade-left">
                     <h1>HI, I AM TUL BAHADUR KHATRI</h1>
-                    <h2 class="mt-4 mb-4">EXPERIENCED <span class="primary-color">
+                    <h2 class="mt-4 mb-4">EXPERIENCE <span class="primary-color">
                             <b class="is-visible"> FULL STACK WEB DEVELOPER</b>
                             <b class="is-hidden"> REACT NATIVE DEVELOPER</b>
                             <b class="is-hidden"> LOGO DESIGNER</b>
                         </span></h2>
 
                     <p>
-                        I offer comprehensive digital services, including website development, logo design, and app development. I create visually stunning and high-performing websites tailored to your business needs, design unique logos that capture your brand's essence, and develop custom apps with user-friendly interfaces and robust functionality. My goal is to deliver scalable solutions that enhance your brand’s online presence and drive engagement.</p>
+                        I offer comprehensive digital services, including website development, logo design, and app
+                        development. I create visually stunning and high-performing websites tailored to your business
+                        needs, design unique logos that capture your brand's essence, and develop custom apps with
+                        user-friendly interfaces and robust functionality. My goal is to deliver scalable solutions that
+                        enhance your brand’s online presence and drive engagement.</p>
 
-                    <div class="mt-4"><button class="btn-primary me-4">Download CV <i
-                                class="fa-solid fa-download"></i></button><span><a href="#" class="hire-me">Hire
-                                Me</a></span></div>
+                    <div class="mt-4">
+                            <a href="{{ asset('frontpanel/assets/tulbahadurkhatri.pdf') }}" target="_blank" title="Download Resume"class="btn-primary me-4"
+                                download>
+                                Download Resume <i class="fa-solid fa-download"></i>
+                            </a>
+                        <button type="button" class="primary-color hire-me pointer">Hire Me</button>
+                    </div>
                 </div>
                 <div class="image-section fade-right">
                     <img src="{{ asset('frontpanel/assets/images/Tulkhatri.jpg') }}" alt="">
@@ -43,10 +51,10 @@
         <div class="my-service">
             <p class="text-center primary-color">MY SERVICE</p>
             <h1 class="text-center">Crafting stories through</h1>
-            <h1 class="text-center"> design and innovation</h1>
+            <h1 class="text-center">Design,Develop and innovation</h1>
 
-            <div class="service-detail-wrapper container">
-                <div class="service fade-left">
+            <div class="service-detail-wrapper container fade-in-left">
+                <div class="service fade-in-left">
                     <span class="icon-wrapper">
                         <svg width="100" height="80" viewBox="0 0 99 101" fill="none"
                             xmlns="http://www.w3.org/2000/svg" id="null" class="svg w-100 replaced-svg">
@@ -62,10 +70,12 @@
                         </svg>
                     </span>
                     <h4 class="title">WEBSITE DEVELOPMENT</h4>
-                    <p class="details">I specialize in creating websites that are not only visually stunning but also optimized for performance, security, and SEO. My custom designs are fully responsive, ensuring a seamless experience across all devices.</p>
+                    <p class="details">I specialize in creating websites that are not only visually stunning but also
+                        optimized for performance, security, and SEO. My custom designs are fully responsive, ensuring a
+                        seamless experience across all devices.</p>
                 </div>
 
-                <div class="service fade-left">
+                <div class="service fade-in-left">
                     <span class="icon-wrapper">
                         <svg width="80" height="70" viewBox="0 0 127 100" fill="none"
                             xmlns="http://www.w3.org/2000/svg" id="null" class="svg w-100 replaced-svg">
@@ -84,10 +94,11 @@
                         </svg>
                     </span>
                     <h4 class="title">LOGO DESIGN</h4>
-                    <p class="details">Your logo is the cornerstone of your brand’s identity. I offer bespoke logo design services that capture the essence of your business and set you apart from the competition.</p>
+                    <p class="details">Your logo is the cornerstone of your brand’s identity. I offer bespoke logo design
+                        services that capture the essence of your business and set you apart from the competition.</p>
                 </div>
 
-                <div class="service fade-left">
+                <div class="service">
                     <span class="icon-wrapper">
                         <svg width="80" height="70" viewBox="0 0 117 100" fill="none"
                             xmlns="http://www.w3.org/2000/svg" id="null" class="svg w-100 replaced-svg">
@@ -109,7 +120,25 @@
                         </svg>
                     </span>
                     <h4 class="title">APPS DEVELOPMENT</h4>
-                    <p class="details">Transform your ideas into powerful, user-friendly apps with my expert app development services. I design and build custom applications that provide exceptional user experiences across various platforms.</p>
+                    <p class="details">Transform your ideas into powerful, user-friendly apps with my expert app development
+                        services. I design and build custom applications that provide exceptional user experiences across
+                        various platforms.</p>
+                </div>
+            </div>
+
+            <div class="about-me container">
+                <div class="left-section fade-in-left">
+                    <p class=" primary-color">ABOUT ME</p>
+                    <h1 class="">Crafting stories through</h1>
+                    <h1 class=""> design and innovation</h1>
+                    <p class="mt-3">I specialize in creating visually stunning and high-performing digital solutions,
+                        including websites, logos, and apps. My work is tailored to meet your specific business needs,
+                        ensuring responsive designs, robust functionality, and memorable branding. Whether it's a custom
+                        website, a unique logo, or a powerful app, I combine creativity and technical expertise to deliver
+                        scalable solutions that help your business thrive in the digital landscape.</p>
+                </div>
+                <div class="image-section fade-in-right">
+                    <img src="{{ asset('frontpanel/assets/images/abouttul.jpg') }}" alt="">
                 </div>
             </div>
 
@@ -120,6 +149,7 @@
 @section('script')
     <script>
         $(document).ready(function() {
+            //experence in 
             const $elements = $('.primary-color b');
             let currentIndex = 0;
 
@@ -128,7 +158,31 @@
                 currentIndex = (currentIndex + 1) % $elements.length;
                 $elements.eq(currentIndex).removeClass('is-hidden').addClass('is-visible');
             }
-            setInterval(showNext, 2000);
+            setInterval(showNext, 1500);
+
+            $(window).on('scroll', function() {
+                $('.fade-in-left').each(function() {
+                    var elementTop = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+
+                    if (elementTop < windowBottom) {
+                        $(this).addClass('fade-left');
+                    }
+                });
+                $('.fade-in-right').each(function() {
+                    var elementTop = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+
+                    if (elementTop < windowBottom) {
+                        $(this).addClass('fade-right');
+                    }
+                });
+            });
+
+            $(document).off('click', '.hire-me');
+            $(document).on('click', '.hire-me', function() {
+                $('.toggle_icon').trigger('click');
+            });
         });
     </script>
 @endsection

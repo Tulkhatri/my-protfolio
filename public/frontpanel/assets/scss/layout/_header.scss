@@ -5,11 +5,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: fixed;
+            top: 0;
+            width: 68.6%;
+            z-index: 999;
+            @include max(769px){
+                position: static;
+                width: 100%;
+            }
             .logo-wrapper {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 .logo{
+                cursor: pointer;
                    h1{
                     background: #55e6a5;
                     padding: 0.4rem 1rem;
@@ -41,6 +50,7 @@
                     padding: 1.01rem;
                     font-size: 1.5rem;
                     color: black;
+                    cursor: pointer;
                 }
             }
         }
