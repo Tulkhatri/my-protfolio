@@ -24,6 +24,7 @@
 
 //service section-start
 .my-service {
+    padding-top:2rem;
     background: #02050a;
     padding: 2rem 0;
     .service-detail-wrapper {
@@ -67,7 +68,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    @include max(679px) {
+    @include max(769px) {
         flex-direction: column-reverse;
     }
     .left-section {
@@ -85,5 +86,202 @@
     }
 }
 //about me section-end
+
+.skill {
+    padding: 4rem 0;
+    background: #09101a;
+    margin-bottom: 3rem;
+    .skill-text-wrapper {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+
+        @include max(769px) {
+            flex-direction: column;
+        }
+
+        .divide-two-section {
+            background: #151c25;
+            width: 100%;
+            .text-progress-wrapper {
+                .text {
+                    padding: 1rem;
+                }
+                .custom-progress {
+                    width: 0; /* Start width at 0 */
+                    height: 0.4rem;
+                    background: #55e6a5;
+                    animation: fadeLeft 3s ease forwards;
+                }
+
+                /* Keyframes for the fade left effect */
+                @keyframes fadeLeft {
+                    0% {
+                        width: 0;
+                        opacity: 0;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        width: 80%; /* Full width */
+                        opacity: 1;
+                    }
+                }
+
+                .custom-progress-html-css {
+                    width: 0; /* Start width at 0 */
+                    height: 0.4rem;
+                    background: #55e6a5;
+                    animation: fadeLeft-html-css 3s ease forwards;
+                }
+
+                /* Keyframes for the fade left effect */
+                @keyframes fadeLeft-html-css {
+                    0% {
+                        width: 0;
+                        opacity: 0;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        width: 90%; /* Full width */
+                        opacity: 1;
+                    }
+                }
+                .custom-progress-mysql {
+                    width: 0; /* Start width at 0 */
+                    height: 0.4rem;
+                    background: #55e6a5;
+                    animation: fadeLeft-mysql 3s ease forwards;
+                }
+
+                /* Keyframes for the fade left effect */
+                @keyframes fadeLeft-mysql {
+                    0% {
+                        width: 0;
+                        opacity: 0;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        width: 60%; /* Full width */
+                        opacity: 1;
+                    }
+                }
+                .custom-progress-mongodb {
+                    width: 0; /* Start width at 0 */
+                    height: 0.4rem;
+                    background: #55e6a5;
+                    animation: fadeLeft-mongodb 3s ease forwards;
+                }
+
+                /* Keyframes for the fade left effect */
+                @keyframes fadeLeft-mongodb {
+                    0% {
+                        width: 0;
+                        opacity: 0;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        width: 50%; /* Full width */
+                        opacity: 1;
+                    }
+                }
+
+                .custom-progress-vue {
+                    width: 0; /* Start width at 0 */
+                    height: 0.4rem;
+                    background: #55e6a5;
+                    animation: fadeLeft-vue 3s ease forwards;
+                }
+
+                /* Keyframes for the fade left effect */
+                @keyframes fadeLeft-vue {
+                    0% {
+                        width: 0;
+                        opacity: 0;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        width: 40%; /* Full width */
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Recent Protfolio
+.cecent-protfolio{
+    .row-1-image-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        @include max(769px){
+            flex-direction: column;
+        }
+        .left{
+            // aspect-ratio: 4.3/2;
+            flex-basis: 68.8%;
+            img {
+                width: 100%;
+                // height: 100%;
+                object-fit: cover;
+                object-position: center;
+              }
+        }
+        .right{
+            flex-basis: 31.2%;
+            // aspect-ratio: 1/1;
+
+            img {
+                width: 100%;
+                // height: 100%;
+                object-fit: cover;
+                object-position: center;
+              }
+        }
+    }
+    .row-2-image-wrapper{
+        margin: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        @include max(769px){
+            flex-direction: column;
+        }
+        .left{
+            flex-basis: 50%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+              }
+        }
+        .right{
+            flex-basis: 50%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+              }
+        }
+    }
+}
+// Recent Protfolio End
 
 //homepage-end
