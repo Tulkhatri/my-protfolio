@@ -7,7 +7,7 @@
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <div class="detail">
-                    <h3 class="mt-3">Address</h3>
+                    <h4 class="mt-3">Address</h4>
                     <p class="mt-2">Ghorahi-14, Dnag Nepal (Permanent)</p>
                     <p class="mt-2">Imadol-1, Lalitpur Nepal (Temporary)</p>
                 </div>
@@ -18,7 +18,7 @@
                     <i class="fa-solid fa-phone-volume"></i>
                 </div>
                 <div class="detail">
-                    <h3 class="mt-3">Lets talk us</h3>
+                    <h4 class="mt-3">Lets talk us</h4>
                     <p class="mt-2">0977-9847862779</p>
                     <p class="mt-2">0977-9866982498</p>
                 </div>
@@ -29,7 +29,7 @@
                     <i class="fa-solid fa-envelope-open-text"></i>
                 </div>
                 <div class="detail">
-                    <h3 class="mt-3">Send us email</h3>
+                    <h4 class="mt-3">Send us email</h4>
                     <p class="mt-2">tulb.khatri@gmail.com</p>
                     <p class="mt-2">tulkhatri01@gmail.com</p>
                 </div>

@@ -21,11 +21,14 @@
             <div class="head-section">
                 <div class="my-short-bio fade-left">
                     <h1>HI, I AM TUL BAHADUR KHATRI</h1>
-                    <h2 class="mt-4 mb-4">EXPERIENCE <span class="primary-color">
+                    {{-- <h2 class="mt-4 mb-4">EXPERIENCE --}}
+                    <h2 class="mt-4 mb-4">
+                        <span class="primary-color">
                             <b class="is-visible"> FULL STACK WEB DEVELOPER</b>
                             <b class="is-hidden"> REACT NATIVE DEVELOPER</b>
                             <b class="is-hidden"> LOGO DESIGNER</b>
-                        </span></h2>
+                        </span>
+                    </h2>
 
                     <p>
                         I offer comprehensive digital services, including website development, logo design, and app
@@ -34,11 +37,11 @@
                         user-friendly interfaces and robust functionality. My goal is to deliver scalable solutions that
                         enhance your brand’s online presence and drive engagement.</p>
 
-                    <div class="mt-4">
-                            <a href="{{ asset('frontpanel/assets/tulbahadurkhatri.pdf') }}" target="_blank" title="Download Resume"class="btn-primary me-4"
-                                download>
-                                Download Resume <i class="fa-solid fa-download"></i>
-                            </a>
+                    <div class="m-t-3">
+                        <a href="{{ asset('frontpanel/assets/tulbahadurkhatri.pdf') }}" target="_blank"
+                            title="Download Resume"class="btn-primary me-4" download>
+                            Download Resume <i class="fa-solid fa-download"></i>
+                        </a>
                         <button type="button" class="primary-color hire-me pointer">Hire Me</button>
                     </div>
                 </div>
@@ -94,8 +97,9 @@
                         </svg>
                     </span>
                     <h4 class="title">LOGO DESIGN</h4>
-                    <p class="details">Your logo is the cornerstone of your brand’s identity. I offer bespoke logo design
-                        services that capture the essence of your business and set you apart from the competition.</p>
+                    <p class="details">Your logo defines your brand’s. I create unique, memorable logos that capture your
+                        business's essence and set you apart from the competition. Let’s design a logo
+                        that embodies your business, vision, and values. </p>
                 </div>
 
                 <div class="service">
@@ -142,6 +146,130 @@
                 </div>
             </div>
 
+            <div class="skill">
+                <div class="container">
+                    <p class="text-center primary-color">SKILL</p>
+                    <h1 class="text-center">Showcasing your talent</h1>
+                    <h1 class="text-center">amplifying your impact</h1>
+                    <h6 class="primary-border primary-color m-t-3">2023 - 2024</h6>
+                    <h4 class="m-t-2">Full Stack Developer</h4>
+                    <p class="mt-3 mb-3">I am full stack developer skilled in the MERN stack (MongoDB, Express.js, React,
+                        Node.js), as well as PHP/Laravel. My experience enables me to create dynamic web applications and
+                        robust server-side solutions efficiently.</p>
+
+                    <div class="skill-text-wrapper">
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">React</h6>
+                                <div class="custom-progress-hidden"></div>
+                            </div>
+                        </div>
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">PHP/Laravel</h6>
+                                <div class="custom-progress-hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-text-wrapper">
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">Java Script</h6>
+                                <div class="custom-progress-hidden"></div>
+                            </div>
+                        </div>
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">Type Script</h6>
+                                <div class="custom-progress-hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-text-wrapper">
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">HTML</h6>
+                                <div class="custom-progress-hidden-html-css"></div>
+                            </div>
+                        </div>
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">CSS/SASS</h6>
+                                <div class="custom-progress-hidden-html-css"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-text-wrapper">
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">Node Js</h6>
+                                <div class="custom-progress-hidden"></div>
+                            </div>
+                        </div>
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">Express Js</h6>
+                                <div class="custom-progress-hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-text-wrapper">
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">MySQL</h6>
+                                <div class="custom-progress-hidden-mysql"></div>
+                            </div>
+                        </div>
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">MongoDB</h6>
+                                <div class="custom-progress-hidden-mongodb"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-text-wrapper">
+
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">Logo Design</h6>
+                                <div class="custom-progress-hidden-mongodb"></div>
+                            </div>
+                        </div>
+                        <div class="divide-two-section">
+                            <div class="text-progress-wrapper">
+                                <h6 class="text">Vue Js</h6>
+                                <div class="custom-progress-hidden-vue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cecent-protfolio">
+                <div class="container">
+                    <p class="primary-color">My recent Portfolio</p>
+                    <h1 class="m-t-1">Elevate your brand to new</h1>
+                    <h1 class="">heights with our portfolio expertise</h1>
+
+                    <div class="row-1-image-wrapper m-t-3">
+                        <div class="left">
+                            <img src="{{ asset('frontpanel/assets/images/smartschool.jpg') }}" alt="">
+                        </div>
+                        <div class="right">
+                            <img src="{{ asset('frontpanel/assets/images/mofaga.jpg') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="row-2-image-wrapper">
+                        <div class="left">
+                            <img src="{{ asset('frontpanel/assets/images/notari.png') }}" alt="">
+                        </div>
+                        <div class="right">
+                            <img src="{{ asset('frontpanel/assets/images/protech.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 @endsection
@@ -175,6 +303,46 @@
 
                     if (elementTop < windowBottom) {
                         $(this).addClass('fade-right');
+                    }
+                });
+                $('.custom-progress-hidden').each(function() {
+                    var elementTop = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+
+                    if (elementTop < windowBottom) {
+                        $(this).addClass('custom-progress');
+                    }
+                });
+                $('.custom-progress-hidden-html-css').each(function() {
+                    var elementTop = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+
+                    if (elementTop < windowBottom) {
+                        $(this).addClass('custom-progress-html-css');
+                    }
+                });
+                $('.custom-progress-hidden-mysql').each(function() {
+                    var elementTop = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+
+                    if (elementTop < windowBottom) {
+                        $(this).addClass('custom-progress-mysql');
+                    }
+                });
+                $('.custom-progress-hidden-mongodb').each(function() {
+                    var elementTop = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+
+                    if (elementTop < windowBottom) {
+                        $(this).addClass('custom-progress-mongodb');
+                    }
+                });
+                $('.custom-progress-hidden-vue').each(function() {
+                    var elementTop = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+
+                    if (elementTop < windowBottom) {
+                        $(this).addClass('custom-progress-vue');
                     }
                 });
             });
